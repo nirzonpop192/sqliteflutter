@@ -12,13 +12,20 @@ class HomeScreen extends StatefulWidget {
 
 class HomeScreenState extends State<HomeScreen> {
 
-  List<Client> testClients = [
-    Client(firstName: "Faisal", lastName: "Mohammad"),
-    Client(firstName: "Nayon", lastName: "Talu"),
-    Client(firstName: "Fayz", lastName: "Talu"),
-    Client(firstName: "Ismail", lastName: "pop"),
-    Client(firstName: "Palash", lastName: "pop"),
-  ];
+  List<Client> testClients = [];
+
+
+  @override
+  void initState() {
+     testClients = [
+      Client(firstName: "Faisal", lastName: "Mohammad"),
+      Client(firstName: "Nayon", lastName: "Talu"),
+      Client(firstName: "Fayz", lastName: "Talu"),
+      Client(firstName: "Ismail", lastName: "pop"),
+      Client(firstName: "Palash", lastName: "pop"),
+    ];
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
